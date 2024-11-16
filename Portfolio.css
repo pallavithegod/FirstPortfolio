@@ -1,0 +1,160 @@
+*{
+    background-color: greenyellow;
+    box-sizing: border-box;
+    color: navy;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+header {
+    text-align: center;
+}
+
+body {
+    margin: 20px;
+    padding-top: 20px;
+}
+
+h1{
+    font-size:3rem;
+}
+
+h1, h2, h3{
+    font-weight: bold;
+    color:rgb(23, 9, 60);
+    font-family: Arial , 'Helvetica', sans-serif;
+    padding-top: 20px;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+
+h4{
+    margin-bottom: 10px;
+    font-weight: bold;
+    color:rgb(23, 9, 60);
+    font-family: Arial , 'Helvetica', sans-serif;
+    padding-top: 20px;
+}
+
+
+/* NAVIGATION PANE */
+.pane{
+    background-color: green;
+    overflow: hidden; 
+    /* position: fixed; */
+    width: 100%;
+    height:60px;
+    z-index: 1000;
+    top: 0;
+    
+}
+
+.pane ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+    margin: 0;
+    height: 50%;
+    background-color: green;
+    align-items: center;
+}
+
+.pane li{
+    padding: 10px 20px;
+    background-color: green;
+    align-items:center;
+    display: flex;
+}
+
+.pane a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    background-color: green;
+    align-items: center;
+}
+
+.pane a:hover{
+    color: yellow;
+}
+
+img{
+    width: 240px;
+    height: 240px;
+    border: 5px solid;
+    border-radius: 120px;
+    border-color: white;
+   
+}
+
+.navi{
+    border: 5px solid;
+    border-color: green;
+    padding: 15px;      
+    margin: 20px;    
+    width: 90%;
+    border-radius: 10px; 
+    color:blue;
+    line-height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;        
+}
+
+.navi a{
+    text-decoration: none;
+}
+
+.school{
+    border: 3px solid;
+    border-color: green;
+    padding: 15px;      
+    margin: 20px;    
+    width: 50%;
+    border-radius: 10px; 
+    color:blue;
+    line-height: 30px;
+}
+
+.college{
+    border: 3px solid;
+    border-color: green;
+    padding: 15px;      
+    margin: 20px;    
+    width: 50%;
+    border-radius: 10px; 
+    color:blue;
+    line-height: 30px;
+}
+
+.skill2{
+    list-style-type: none;
+}
+
+.btn{
+    color: white;
+    margin-right: 20px;
+    background-color: rgb(7, 52, 3);
+    border-radius: 8px;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.btn:hover{
+    color:rgb(23, 9, 60);
+    background-color: rgb(83, 190, 83);
+}
+
+.social{
+    text-decoration: none;
+}
+
+.footer{
+    text-align: center;
+}
+
+
