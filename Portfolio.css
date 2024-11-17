@@ -2,30 +2,36 @@
     background-color: greenyellow;
     box-sizing: border-box;
     color: navy;
-    margin-left: 10px;
-    margin-top: 15px;
+    margin: 0;
+    padding: 0;
 }
 
 header {
     text-align: center;
+    padding: 80px 20px 20px; /* Adjusted for the fixed navbar */
+    font-weight: bold;
 }
 
 body {
     margin: 20px;
     padding-top: 20px;
+    line-height: 1.8;
+    font-family: Arial, sans-serif;
 }
 
 h1{
     font-size:3rem;
+    text-shadow: 4px 0px 2px rgba(0, 0, 0, 0.5);
 }
 
 h1, h2, h3{
     font-weight: bold;
+    margin-bottom: 10px;
     color:rgb(23, 9, 60);
     font-family: Arial , 'Helvetica', sans-serif;
-    padding-top: 20px;
+    padding-top: 10px;
     text-decoration-line: underline;
-    text-decoration-style: double;
+    text-decoration-style:solid;
 }
 
 h4{
@@ -33,39 +39,37 @@ h4{
     font-weight: bold;
     color:rgb(23, 9, 60);
     font-family: Arial , 'Helvetica', sans-serif;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
-
-/* NAVIGATION PANE */
-.pane{
+.pane{      
     background-color: green;
     overflow: hidden; 
     position: fixed;
-    width: 100%;
-    height:60px;
+    width: 100%;    
+    height:50px;
     z-index: 1000;
-    top: 0;
-    margin-top: 15px;
-    
+    top: 0; 
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 7px rgb(1, 31, 9);
 }
 
 .pane ul{
-    list-style-type: none;
+    list-style: none;
     display: flex;
     justify-content: center;
-    padding: 0 10px;
+    padding: 0;
     margin: 0;
     height: 50%;
     background-color: green;
-    align-items: center;
+    /* align-items: center; */
+    width: 100%;
 }
 
 .pane li{
-    padding: 10px 20px;
     background-color: green;
-    align-items:center;
-    display: flex;
+    margin: 0 15px;
 }
 
 .pane a{
@@ -74,38 +78,34 @@ h4{
     text-decoration: none;
     display: block;
     background-color: green;
-    align-items: center;
+    font-size: 1rem;
+    transition: transform 0.2s ease-in-out;
+    /* align-items: center; */
 }
 
 .pane a:hover{
     color: yellow;
+    transform: scale(1.2);
 }
 
-img{
+section{
+    padding-top: 60px;      /* Offset for navbar height + buffer */
+    margin: 10px;           /* Space between sections */
+}
+
+.image{
     width: 240px;
     height: 240px;
     border: 5px solid;
     border-radius: 120px;
     border-color: white;
-   
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
 }
 
-.navi{
-    border: 5px solid;
-    border-color: green;
-    padding: 15px;      
-    margin: 20px;    
-    width: 90%;
-    border-radius: 10px; 
-    color:blue;
-    line-height: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;        
-}
-
-.navi a{
-    text-decoration: none;
+.image:hover{
+    transform: scale(1.08);
+    box-shadow: 3px color rgb(132, 132, 225);
 }
 
 .school{
@@ -117,6 +117,7 @@ img{
     border-radius: 10px; 
     color:blue;
     line-height: 30px;
+    box-shadow: 0 0 5px rgb(21, 21, 21);
 }
 
 .college{
@@ -128,6 +129,7 @@ img{
     border-radius: 10px; 
     color:blue;
     line-height: 30px;
+    box-shadow: 0 0 5px rgb(21, 21, 21);
 }
 
 .skill2{
@@ -136,26 +138,69 @@ img{
 
 .btn{
     color: white;
-    margin-right: 20px;
+    /* margin-right: 20px; */
     background-color: rgb(7, 52, 3);
     border-radius: 8px;
     border: none;
     padding: 10px 20px;
     text-align: center;
     font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
 }
 
 .btn:hover{
     color:rgb(23, 9, 60);
     background-color: rgb(83, 190, 83);
+    transform: scale(1.1);
 }
 
-.social{
+#contact a{
+    text-decoration: none;
+    display: inline-flex;
+    transition: transform 0.2s ease-in-out /*, color 0.3s ease-in-out */;
+    text-shadow: 0.9px 0.9px 1px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    align-items: center;
+    gap: 5px;
+}
+
+#contact a:hover{
+    color:rgb(7, 52, 3);
+    font-weight: bold;
+    transform: scale(1.15);
+}
+
+#contact .icons{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    /* vertical-align: middle; */
+}
+
+.navi{
+    border: 5px solid;
+    border-color: green;
+    padding: 20px;      
+    margin: 20px;    
+    width: 90%;
+    border-radius: 10px; 
+    color:blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-shadow: 0 0 5px rgb(21, 21, 21); 
+    align-items: center;
+}
+
+.navi a{
     text-decoration: none;
 }
 
 .footer{
     text-align: center;
+    font-size: 0.9rem;
+    margin: 20px 0;
 }
-
-
